@@ -168,7 +168,7 @@ def send_feedback(run_id, score):
 
 st.set_page_config(page_title='🤖🗳️ Résultatbot, le robot des résultats électoraux')
 st.title('🤖🗳️ Résultatbot, le robot des résultats électoraux')
-st.info("L'IA est-elle capable de répondre à des questions en langage naturel sur des données ? Cet outil est un test avec GPT-4 et une méthode d'évaluation dévelopée par [LangChain](https://blog.langchain.dev/benchmarking-question-answering-over-csv-data/). \n\n⚠️ Cette app est en développement. Contrevérifiez la réponse dans les données affichées en-dessous si vous souhaitez la citer comme un fait ! \n\n💬 Cliquez sur 👎 ou 👍 pour que je puisse évaluer si ce robot fournit des réponses adéquates et l'améliorer!")
+st.info("L'IA est-elle capable de répondre à des questions en langage naturel sur des données ? Cet outil est un test avec GPT-4 et une méthode d'évaluation dévelopée par [LangChain](https://blog.langchain.dev/benchmarking-question-answering-over-csv-data/). \n\n⚠️ Cette app est en développement. Vérifiez la réponse dans les données affichées en-dessous si vous souhaitez la citer comme un fait ! \n\n💬 Cliquez sur 👎 ou 👍 pour que je puisse évaluer si ce robot fournit des réponses adéquates et l'améliorer!")
 
 # question_list = [
 # 	"Quel parti a remporté l'élection générale?",
