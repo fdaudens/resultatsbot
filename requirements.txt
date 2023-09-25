@@ -1,0 +1,6 @@
+pandas
+streamlit
+langchain
+langsmith
+json
+os
