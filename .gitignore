@@ -1,3 +1,4 @@
 tests/
 .env
 resultats/autres_resultats/
+__init__.py
