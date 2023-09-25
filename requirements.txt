@@ -1,5 +1,8 @@
-langchain
-langsmith
-json
-openai
-tiktoken
+langchain==0.0.300
+langsmith==0.0.40
+pandas==1.5.3
+pandasai==1.2.6
+pydantic==1.10.11
+python-dotenv==1.0.0
+streamlit==1.25.0
+streamlit_feedback==0.0.9
