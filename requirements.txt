@@ -1,6 +1,5 @@
-pandas
-streamlit
 langchain
 langsmith
 json
-os
+openai
+tiktoken
