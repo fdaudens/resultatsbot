@@ -6,17 +6,11 @@ from langchain.agents.agent_types import AgentType
 from langsmith import Client
 import json 
 from dotenv import load_dotenv, find_dotenv
-import os
-
 from langchain.agents.agent_toolkits.pandas.prompt import PREFIX
 
 # Charger .env et API key
-load_dotenv(find_dotenv())
-openai_api_key  = os.environ['OPENAI_API_KEY']
-langchain_tracing_v2 = st.secrets["LANGCHAIN_TRACING_V2"]
-langchain_endpoint = st.secrets["LANGCHAIN_ENDPOINT"]
-langchain_api_key = st.secrets["LANGCHAIN_API_KEY"]
-langchain_project = st.secrets["LANGCHAIN_PROJECT"]
+load_dotenv(find_dotenv(".streamlit/secrets.toml"))
+
 #===============================================
 #DATAFRAMES 
 #===============================================
