@@ -16,10 +16,10 @@ openai_api_key  = os.environ['OPENAI_API_KEY']
 
 st.write(
     "Has environment variables been set:",
-    os.environ["langchain_tracing_v2"] == st.secrets["LANGCHAIN_TRACING_V2"]
-    os.environ["langchain_endpoint"] == st.secrets["LANGCHAIN_ENDPOINT"]
-    os.environ["langchain_api_key"] == st.secrets["LANGCHAIN_API_KEY"]
-    os.environ["langchain_project"] == st.secrets["LANGCHAIN_PROJECT"]
+    os.environ["langchain_tracing_v2"] == st.secrets["LANGCHAIN_TRACING_V2"],
+    os.environ["langchain_endpoint"] == st.secrets["LANGCHAIN_ENDPOINT"],
+    os.environ["langchain_api_key"] == st.secrets["LANGCHAIN_API_KEY"],
+    os.environ["langchain_project"] == st.secrets["LANGCHAIN_PROJECT"],
 )
 #===============================================
 #DATAFRAMES 
