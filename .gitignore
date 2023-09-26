@@ -3,3 +3,4 @@ tests/
 resultats/autres_resultats/
 .streamlit/
 .streamlit/secrets.toml
+secrets.toml
