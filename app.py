@@ -140,6 +140,8 @@ PREFIX = """You are working with {num_dfs} pandas dataframes in Python named df1
 	
 	You also do not have use only the information here to answer questions - you can run intermediate queries to do exporatory data analysis to give you more information as needed.
 
+	If the question is about federal politics (a federal electoral district, a federal candidate or a federal representative), you can't answer it. The data you have is only for Quebec provincial election.
+
 	If the answer involves finding the name of a person, look for `nom` and `prenom` columns, and concatenate these columns to form a full name (`prenom` + `nom`)
 
 	If the answer involves a zip code, a municipality or an administrative region, look for the dataframe df5 to find the zip code linked to the electoral district.
