@@ -24,3 +24,5 @@ Among other possible improvements:
 - Integration of results from the past 10 years, including partial results
 - Automatic generation of graphs
 - Adding conversational memory
+
+To test this app, (click here)[https://resultatsbot.streamlit.app/]

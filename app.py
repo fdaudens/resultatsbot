@@ -153,7 +153,6 @@ agent = create_pandas_dataframe_agent(
 	early_stopping_method='generate',
 	)
 
-from langsmith import Client
 client = Client()
 def send_feedback(run_id, score):
     client.create_feedback(run_id, "user_score", score=score)
