@@ -11,6 +11,12 @@ from langchain.agents.agent_toolkits.pandas.prompt import PREFIX
 # Charger .env et API key
 load_dotenv(find_dotenv(".streamlit/secrets.toml"))
 
+openai_api_key = st.secrets.OPENAI_API_KEY
+langchain_tracing = st.secrets.LANGCHAIN_TRACING_V2
+langchain_endpoint = st.secrets.LANGCHAIN_ENDPOINT
+langchain_api_key = st.secrets.LANGCHAIN_API_KEY
+langchain_project = st.secrets.LANGCHAIN_PROJECT
+
 #===============================================
 #DATAFRAMES 
 #===============================================
