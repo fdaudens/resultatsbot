@@ -13,10 +13,11 @@ from langchain.agents.agent_toolkits.pandas.prompt import PREFIX
 # Charger .env et API key
 load_dotenv(find_dotenv())
 openai_api_key  = os.environ['OPENAI_API_KEY']
-langchain_tracing_v2  = os.environ['LANGCHAIN_TRACING_V2']
-langchain_endpoint  = os.environ['LANGCHAIN_ENDPOINT']
-langchain_api_key  = os.environ['LANGCHAIN_API_KEY']
-langchain_project  = os.environ['LANGCHAIN_PROJECT']
+
+st.write("langchain_tracing_v2:", st.secrets["LANGCHAIN_TRACING_V2"])
+st.write("langchain_endpoint:", st.secrets["LANGCHAIN_ENDPOINT"])
+st.write("langchain_api_key:", st.secrets["LANGCHAIN_API_KEY"])
+st.write("langchain_project:", st.secrets["LANGCHAIN_PROJECT"])
 
 #===============================================
 #DATAFRAMES 
