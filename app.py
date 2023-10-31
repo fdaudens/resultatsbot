@@ -1,17 +1,16 @@
 import pandas as pd
 import streamlit as st
 from langchain.chat_models import ChatOpenAI
-from langchain.agents.agent_toolkits import create_pandas_dataframe_agent
+from langchain_experimental.agents.agent_toolkits import create_pandas_dataframe_agent
 from langchain.agents.agent_types import AgentType
 from langsmith import Client
 import json 
 from dotenv import load_dotenv, find_dotenv
-from langchain.agents.agent_toolkits.pandas.prompt import PREFIX
+from langchain_experimental.agents.agent_toolkits.pandas.prompt import PREFIX
 
 # Charger .env et API key
 load_dotenv(find_dotenv(".streamlit/secrets.toml"))
 
-openai_api_key = st.secrets.OPENAI_API_KEY
 langchain_tracing = st.secrets.LANGCHAIN_TRACING_V2
 langchain_endpoint = st.secrets.LANGCHAIN_ENDPOINT
 langchain_api_key = st.secrets.LANGCHAIN_API_KEY
@@ -173,6 +172,8 @@ def send_feedback(run_id, score):
 st.set_page_config(page_title='🤖🗳️ Résultatbot, le robot des résultats électoraux')
 st.title('🤖🗳️ Résultatbot, le robot des résultats électoraux')
 st.info("L'IA est-elle capable de répondre à des questions en langage naturel sur des données ? Cet outil est un test avec GPT-4 et une méthode d'évaluation dévelopée par [LangChain](https://blog.langchain.dev/benchmarking-question-answering-over-csv-data/). \n\n⚠️ Cette app est en développement. Vérifiez la réponse dans les données affichées en-dessous si vous souhaitez la citer comme un fait ! \n\n💬 Cliquez sur 👎 ou 👍 pour que je puisse évaluer si ce robot fournit des réponses adéquates et l'améliorer!")
+
+openai_api_key = st.text_input("Entrez votre clé API OpenAI:")
 
 # question_list = [
 # 	"Quel parti a remporté l'élection générale?",
